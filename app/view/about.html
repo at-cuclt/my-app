@@ -1,0 +1,100 @@
+<section ng-controller="AboutController" class="wrapper">
+  <section class="page_head">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <nav id="breadcrumbs">
+            <ul>
+              <li>You are here:</li>
+              <li><a href="#/about">Home</a></li>
+              <li>About me</li>
+            </ul>
+          </nav>
+          <div class="page_title">
+              <h2>about me</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <section class="content about">
+    <div class="container">
+      <div class="row sub_content">
+        <div class="who">
+          <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="dividerHeading">
+              <h4><span>Who am I?</span></h4>
+            </div>
+            <img class="left_img img-thumbnail" ng-src="{{me.image}}" width="200px" heigth="228px" alt="about img">
+            <p>Hello everyone, my name is Le Thi Cuc. I'm 22 years old.</p>
+            <p>I recently graduated with a degree in information technology at Danang University of Education in June this year. I am currently an intern at the Asian Tech Company.</p>
+            <p>And I will really happy if I became a part of the company where everyone working together in a room. I want to bring the best value to the company, for my country. Thank you.</p> 
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="dividerHeading">
+              <h4><span>Contact me</span></h4>
+            </div>
+            <p>This is all my information. </p>
+            <ul class="progress-skill-bar">
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <span>Address: </span>
+                <div class="progress_skill">
+                  {{me.address}}
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <span>Email: </span>
+                <div class="progress_skill">
+                  {{me.email}}
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <span>Phone number: </span>
+                <div class="progress_skill">
+                  {{me.phone}}
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-github"></i>
+                <span>Github: </span>
+                <div class="progress_skill">
+                  <a href="https://github.com/at-cuclt">{{me.gitAccount}}</a>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-building-o"></i>
+                <span>Company: </span>
+                <div class="progress_skill">
+                 <a href="http://www.asiantech.vn/">{{me.company}}</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row  sub_content">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="dividerHeading">
+            <h4><span>Meet the Team</span></h4>
+          </div>
+        </div>
+        <div ng-repeat="member in team" class="col-lg-3 col-md-3 col-sm-6">
+          <div class="dreamz-team">
+            <div class="pic">
+              <img ng-src="{{member.image}}" width="260px" height="226px" alt="profile img">
+            </div>
+            <div class="team_prof">
+              <h3 class="names">{{member.name}}<small>{{member.tittleJob}}</small></h3>
+              <p class="description">{{member.description}} </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<!--end wrapper-->
