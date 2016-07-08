@@ -2,28 +2,28 @@
   {
     "id": 1,
     "image": "images/teams/dungnh.png",
-    "name": "Nguyễn Hữu Dũng",
+    "name": "Hữu Dũng",
     "jobTitle": "Manager",
     "description": "I think I have gained a lot of experience from my work with foreigners, especially to understand how to create the UI / UX and how to make the software adapt to high-quality products."
   },
   {
     "id": 2,
     "image": "images/teams/quangth.jpg",
-    "name": "Trần Hữu Quang",
+    "name": "Hữu Quang",
     "jobTitle": "Web Developer",
     "description": "It's difficult to recall the happiest moment in my life because I have so many happy moments. But I think the moment is when I'm with my family when we play, laugh, smile and relax…"
   },
   {
     "id": 3,
     "image": "images/teams/dongvd.jpg",
-    "name": "Võ Doãn Đồng",
+    "name": "Doãn Đồng",
     "jobTitle": "Web Designer",
     "description": "I was always looking for a dynamic and professional environment. Finally, I found these in Asian Tech. “Challenge something new everyday”, “You may not succeed, but you have to try to find out”."
   },
   {
     "id": 4,
     "image": "images/teams/phuocdn.jpg",
-    "name": "Đoàn Ngọc Phước",
+    "name": "Ngọc Phước",
     "jobTitle": "Web Developer",
     "description": "That I'm an easy-going persion that works well with everyone, that I'm friendly and active. I am good at understanding difficulties and overcoming them together with my colleagues."
   }

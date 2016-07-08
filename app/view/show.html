@@ -26,7 +26,7 @@
             <article ng-repeat="food in foods | filter : search" class="post">
               <figure class="post_img">
                 <a href="#/show">
-                  <img ng-src="{{food.image}}" alt="blog post">
+                  <img ng-src="{{food.image}}" alt="good food">
                 </a>
               </figure>
               <div class="post_content">
@@ -62,7 +62,60 @@
               <div class="widget_title">
                 <h4><span>Create new</span></h4>
               </div>
-              
+              <ul class="arrows_list list_style">
+                <li>
+                  <div class="row" ng-class="{'input-append':name}">
+                    <div class="form-group">
+                      <div class="col-lg-12 ">
+                        <input type="file" id="name" file-model="image" class="form-control" maxlength="100" data-msg-required="Please enter image." value="" placeholder="Food's image" >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row" ng-class="{'input-append':name}">
+                    <div class="form-group">
+                      <div class="col-lg-12 ">
+                        <input type="text" id="name" ng-model="name" class="form-control" data-msg-required="Please enter food's name" value="" placeholder="Food's Name" >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-lg-12 ">
+                        <input type="text" id="name" ng-model="address" class="form-control" data-msg-required="Please enter store's address." value="" placeholder="Store's Address" >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-lg-12 ">
+                        <input type="text" id="name" ng-model="like" class="form-control" data-msg-required="Please enter like number." value="" placeholder="Like number (1...100...)" >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="form-group">
+                      <div class="col-lg-12 ">
+                        <input type="text" id="name" ng-model="comment" class="form-control" data-msg-required="Please enter comment." value="" placeholder="Comment number (1...100...)" >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row">
+                    <div class="col-md-12 text-right">
+                      <input type="submit" ng-click="addFood()" data-loading-text="Loading..." class="btn btn-default btn-lg" value="Add Food">
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

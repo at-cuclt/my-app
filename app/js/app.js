@@ -1,11 +1,11 @@
 'use strict';
 // App module
-var firstApp = angular.module('firstApp', [
+var myApp = angular.module('myApp', [
   'ngRoute', // All routing, navigating in the app goes here
   'myControllers', // Our beloved controller module collection
 ]);
 
-firstApp.config(['$routeProvider', function ($routeProvider) {
+myApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     .when('/about', {
       templateUrl: 'view/about.html',
